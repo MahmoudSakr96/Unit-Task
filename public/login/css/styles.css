@@ -1,0 +1,157 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font: 16px 'Open Sans', Arial, sans-serif;
+	line-height: normal;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+}
+.outer-parent, .inner-parent {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+div.inner-parent {
+	display: table-cell;
+	vertical-align: middle;
+}
+.wrapper {
+	max-width: 725px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 0 5px #969696;
+}
+.header {
+	/* "../img/logo.png" */
+	height: 110px;
+    background: url("../../clogo/images/login/logo_bg.svg") no-repeat center center, url("../../clogo/images/login/logo_bg.png?nocache=1") no-repeat center center;
+    background-size: auto 65%;
+}
+@media only screen
+	and (min-device-width: 320px)
+	and (-webkit-min-device-pixel-ratio: 1.5) {
+	.header {
+		background-size: auto 40%;
+	}
+}
+.footer {
+	cursor: pointer;
+	text-align: center;
+
+	padding: 6px 0;
+}
+.footer > .toggle-text {
+	color: #009aff;
+	white-space: nowrap;
+}
+.footer .arrow-icon {
+	fill: #009aff;
+}
+.footer.toggle-bg {
+}
+.footer > .toggle-text.hide {
+	display: none;
+}
+.footer.toggle-bg > .toggle-text.show {
+	display: none;
+}
+.footer.toggle-bg > .toggle-text.hide {
+	display: inline;
+}
+.content .form-container {
+	background: url("../img/pattern.png") repeat-x left bottom, #ebebeb;
+}
+.content .permissions-container {
+	padding: 0 40px;
+}
+#auth-form {
+	width: 60%;
+	margin: 0 auto;
+	padding: 35px 0;
+}
+#auth-form input {
+	display: block;
+	width: 100%;
+	height: 35px;
+	padding: 0 5px;
+	margin: 0 0 12px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+	background-color: #fff;
+}
+#auth-form input[type="submit"] {
+	color: #fff;
+	background-color: #009aff;
+	font-size: 1.3em;
+	border: none;
+}
+#auth-form input.verification-code.invalid-code {
+	color: red;
+}
+#auth-form .two-factor-sent-text {
+	color: #464646;
+	margin: 0 0 12px 0;
+}
+#auth-form .err {
+	color: #ed2252;
+	text-align: center;
+}
+.title {
+	font-size: 1em;
+	font-weight: normal;
+	color: #616161;
+	margin-top: 5px;
+	text-align: center;
+}
+.title .app-name,
+.title .dev-name {
+	text-decoration: none;
+	color: #009aff;
+	white-space: nowrap;
+}
+.title img.app-logo {
+	vertical-align: middle;
+}
+.title .title-marker {
+	font-size: 0.7em;
+}
+.permissions-list {
+	font-size: 0.8em;
+	color: #222222;
+	padding: 0;
+	list-style-image: url("../img/okay.svg");
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+}
+.permissions-list > li {
+	cursor: pointer;
+	margin: 0 0 5px 20px;
+}
+.permissions-list > li > ul {
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	color: #616161;
+	list-style: none;
+}
+.permissions-list > li > ul.show {
+	height: auto;
+	padding: 5px 0;
+}
+.permissions-list > li > ul > li:before {
+	content: '- ';
+}
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+}
+#auth-form input[type="text"][readonly] {
+	background-color: #eee;
+	color: #888;
+}

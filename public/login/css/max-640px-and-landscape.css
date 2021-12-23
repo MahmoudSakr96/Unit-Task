@@ -1,0 +1,19 @@
+body {
+  overflow-y: initial;
+}
+.content {
+  padding-bottom: 43px;
+}
+.content .permissions-container {
+  padding: 0 20px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 43px;
+  width: 100%;
+}
+
+.wrapper {
+	box-shadow: none;
+}
